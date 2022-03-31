@@ -1,5 +1,5 @@
 import '../App.css';
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
+import CartWidget from './CartWidget';
 
 let Navbar = () => {
     return (
@@ -19,6 +19,9 @@ let Navbar = () => {
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Nosotros</a>
+      </li>
+      <li class="nav-item">
+        <CartWidget></CartWidget>
       </li>
     </ul>
   </div>
