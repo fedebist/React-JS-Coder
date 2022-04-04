@@ -182,3 +182,25 @@ ul.show{
 navPersonalizado{
   background-color: #114AF3 !important;
 }
+
+/* Cantidad */
+.itemCount{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+}
+
+.btnCantidad{
+  width: 30px;
+  height: 30px;
+  color: beige;
+  background-color: #114AF3;
+  border-radius: 30px;
+  box-shadow: 10px 1px 10px rgba(0.5,0,0,0.2);
+}
+
+.cantidad{
+   font-size: 20px;
+   padding: 5px;
+}

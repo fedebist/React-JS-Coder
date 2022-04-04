@@ -1,7 +1,8 @@
+import ItemCount from './ItemCount';
 
 let ItemListContainer = ({props}) => {
     return(
-        <div>{props}</div>
+        <ItemCount />
     );
 }
 
