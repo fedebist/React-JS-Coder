@@ -179,7 +179,7 @@ ul.show{
   }
 }
 
-navPersonalizado{
+.navPersonalizado{
   background-color: #114AF3 !important;
 }
 
@@ -203,4 +203,8 @@ navPersonalizado{
 .cantidad{
    font-size: 20px;
    padding: 5px;
+}
+
+.imgCard{
+  width: 20px;
 }
