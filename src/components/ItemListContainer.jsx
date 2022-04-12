@@ -5,7 +5,7 @@ import ItemList from './ItemList';
 import customFetch from '../utils/customFetch';
 const {Products} = require('../data/Products');
 
-let ItemListContainer = ({props}) => {
+let ItemListContainer = ({item}) => {
 
     const[datos, setDatos ] = useState([ ]);
 
@@ -19,8 +19,8 @@ let ItemListContainer = ({props}) => {
 
     return(
         <>
+        <ItemList items={datos}/>
         <ItemCount />
-        <ItemList/>
         </>
     );
     }
