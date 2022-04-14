@@ -3,9 +3,10 @@ import {useState} from 'react';
 import ItemCount from './ItemCount';
 import ItemList from './ItemList';
 import customFetch from '../utils/customFetch';
-const {Products} = require('../data/Products');
+import Item from './Item';
+import Products from '../data/Products';
 
-let ItemListContainer = ({item}) => {
+let ItemListContainer = ({}) => {
 
     const[datos, setDatos ] = useState([ ]);
 
