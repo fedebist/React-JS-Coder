@@ -1,4 +1,3 @@
-import Products from '../data/Products';
 import Item from './Item';
 import Container from '@mui/material/Container';
 

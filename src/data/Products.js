@@ -6,7 +6,8 @@ const Products = [
       fabricante: "Apple",
       img: ["https://i0.wp.com/hipertextual.com/wp-content/uploads/2021/09/iPhone-13-Pro-00589-scaled.jpg?fit=1200%2C802&ssl=1"],
       almacenamiento: '256 GB',
-      stock: 8
+      stock: 8,
+      categoryId: 1,
     },
     {
       id: 2,
@@ -15,7 +16,8 @@ const Products = [
       fabricante: "Apple",
       img: ["https://i.blogs.es/7342c1/iphone-13-1-/450_1000.jpg"],
       almacenamiento: '128 GB',
-      stock: 5
+      stock: 5,
+      categoryId: 1,
     },
     { 
       id: 3,
@@ -24,7 +26,8 @@ const Products = [
       fabricante: "Apple",
       img: ["https://cdn.pocket-lint.com/r/s/1200x/assets/images/149324-phones-review-review-iphone-11-pro-max-review-product-shots-image10-sicm5qtl4z.jpg"],
       almacenamiento: '128 GB',
-      stock: 2
+      stock: 2,
+      categoryId: 1,
     },
     {
       id: 4,
@@ -33,7 +36,8 @@ const Products = [
       fabricante: "Apple",
       img: ["https://i.blogs.es/e5cf54/iphone-x/840_560.jpg"],
       almacenamiento: '64 GB',
-      stock: 1
+      stock: 1,
+      categoryId: 1,
     },
     {
       id: 5,
@@ -42,7 +46,8 @@ const Products = [
       fabricante: "Apple",
       img: ["https://www.enter.co/wp-content/uploads/2017/10/IMG_4432.jpg"],
       almacenamiento: '256 GB',
-      stock: 1
+      stock: 1,
+      categoryId: 1,
     },
     {
       id: 6,
@@ -51,7 +56,8 @@ const Products = [
       fabricante: "Samsung",
       img: ["https://cdn.pocket-lint.com/r/s/1200x/assets/images/159954-phones-review-hands-on-samsung-galaxy-s22-ultra-review-image1-xsnfadbpku.jpg"],
       almacenamiento: '256 GB',
-      stock: 2
+      stock: 3,
+      categoryId: 2,
   }
   ];
 

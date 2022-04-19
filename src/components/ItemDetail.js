@@ -1,4 +1,5 @@
 import ItemCount from './ItemCount';
+import React from 'react';
 
 const ItemDetail = ({ item }) => {
 
@@ -14,7 +15,7 @@ const ItemDetail = ({ item }) => {
             ?
      
 
-             <img src={item.image[0]} />
+             <img src={item.image[2]} />
               {item.title}
                {item.price}
                {item.stock} unidades en stock

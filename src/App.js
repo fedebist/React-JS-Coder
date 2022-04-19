@@ -1,18 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import ItemDetailContainer from './components/ItemDetailContainer';
-import ItemListContainer from './components/ItemListContainer';
-import Navbar from './components/Navbar';
+import Home from "./pages/Home"
 
-
-function App() {
-  return (
-    <>
-    <Navbar />
-    {/* <ItemListContainer/> */}
-    <ItemDetailContainer/>
-    </>
-  );
-}
+const App = () => {
+  return <Home />;
+};
 
 export default App;
