@@ -1,11 +1,12 @@
 import '../App.css';
 import CartWidget from './CartWidget';
+import {Link} from 'react-router-dom';
 
 let Navbar = () => {
     return (
       <nav class='navPersonalizado'>
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Phone Store MDP</a>
+  <Link to='/'><a class="navbar-brand" href="#">Phone Store MDP</a></Link>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -15,7 +16,10 @@ let Navbar = () => {
         <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Catálogo</a>
+        <Link to='/category/1'><a class="nav-link" href="#">iPhone</a></Link>
+      </li>
+      <li class="nav-item">
+      <Link to='/category/2'><a class="nav-link" href="#">Samsung</a></Link>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Nosotros</a>

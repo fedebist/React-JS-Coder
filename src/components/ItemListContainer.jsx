@@ -14,16 +14,16 @@ let ItemListContainer = ({}) => {
 
     useEffect(() => {
         if(idCategory== undefined){
-        customFetch(2000, Products)
+        customFetch(1000, Products)
         .then(result=> setDatos(result))
         .catch(err => console.log(err))
         } else{
-        customFetch(2000, Products.filter(item=> item.categoryId
+        customFetch(1000, Products.filter(item=> item.categoryId
          === parseInt(idCategory)   ))
         .then(result=> setDatos(result))
         .catch(err => console.log(err))
         }
-    }, [ ]);
+    }, [ idCategory ]);
 
     const onAdd = (qty) => {
         alert("You have selected " + qty + " items.");
