@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import { useParams } from 'react-router-dom';
 import customFetch from "../utils/customFetch";
 import ItemDetail from './ItemDetail';
 const {products} = require('../data/Products');
-import { useParams } from 'react-router-dom';
+
 
 
 const ItemDetailContainer= () => {
