@@ -15,7 +15,7 @@ const ItemDetail = ({ item }) => {
             ?
      
 
-             <img src={item.image[2]} />
+             <img src={item.img} />
               {item.title}
                {item.price}
                {item.stock} unidades en stock
