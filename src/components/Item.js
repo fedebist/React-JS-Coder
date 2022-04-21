@@ -2,13 +2,13 @@ import Products from '../data/Products';
 import Container from '@mui/material/Container';
 import { Link } from 'react-router-dom';
 
-let Item = ({ title, price, fabricante, img, almacenamiento, stock }) => {
+let Item = ({ title, price, fabricante, img, almacenamiento, stock, productId }) => {
     return (
        <>
        <div class='cardsTienda'>
        <ul>
        <li>
-       <Link to={'/item/${productId}'}><img src={img}/></Link>
+       <Link to={'/item/'+ productId}><img src={img}/></Link>
        <div class='title'>{title}</div>
        <div class='price'>{price}</div>
        <div class='fabricante'>Fabricante: {fabricante}</div>

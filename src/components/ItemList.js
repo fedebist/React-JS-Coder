@@ -9,6 +9,7 @@ let ItemList = ({items}) => {
        ?
       items.map(item=>
       <Item
+      productId={item.id}
       key={item.id}
       title={item.title}
       price={item.price}

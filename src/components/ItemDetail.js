@@ -11,8 +11,6 @@ const ItemDetail = ({ item }) => {
         <>
         {
             <div>
-            item.image
-            ?
      
 
              <img src={item.img} />
