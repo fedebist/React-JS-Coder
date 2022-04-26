@@ -58,7 +58,17 @@ const Products = [
       almacenamiento: '256 GB',
       stock: 3,
       categoryId: 2,
-  }
+  },
+  {
+    id: 7,
+    title: "Redmi Note 8",
+    price: "65.000 AR$",
+    fabricante: "Xiaomi",
+    img: ["https://i.blogs.es/fec79d/img_8972/840_560.jpg"],
+    almacenamiento: '64 GB',
+    stock: 7,
+    categoryId: 3,
+},
   ];
 
 export default Products;

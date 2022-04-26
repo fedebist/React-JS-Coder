@@ -9,8 +9,8 @@ const Home = () => {
             <Navbar />
             <Routes>
                 <Route path='/' element={<ItemListContainer />} />
-                <Route path='/category/:idCategory' element={<ItemListContainer />} />
-                 <Route path='/item/:productId' element={<ItemDetailContainer />} /> 
+                <Route path='/category/:idCategory' element={<ItemListContainer />} /> {/* categorías (iphone, samsung). El nombre lo decide uno 'category' */}
+                 <Route path='/item/:productId' element={<ItemDetailContainer />} /> {/* número de producto */}
             </Routes>
         </BrowserRouter>
     );

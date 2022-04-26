@@ -228,3 +228,27 @@ ul.show{
   font-size: 140%;
   text-align: center;
 }
+
+.detail img{
+  width: 500px;
+  padding: 20px;
+}
+
+.detailTitle{
+  font-size: 100%;
+}
+
+.SearchContainer{
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  padding: 5px;
+}
+
+.inputSearch{
+  margin-right: 5px;
+  border: none;
+  outline: none;
+}

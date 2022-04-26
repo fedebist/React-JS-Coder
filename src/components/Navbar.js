@@ -1,6 +1,7 @@
 import '../App.css';
 import CartWidget from './CartWidget';
 import {Link} from 'react-router-dom';
+import SearchForm from './SearchForm';
 
 let Navbar = () => {
     return (
@@ -13,13 +14,19 @@ let Navbar = () => {
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+      <Link to='/'><a class="nav-link" href="#">Home <span class="sr-only"></span></a></Link>
       </li>
       <li class="nav-item">
         <Link to='/category/1'><a class="nav-link" href="#">iPhone</a></Link>
       </li>
       <li class="nav-item">
       <Link to='/category/2'><a class="nav-link" href="#">Samsung</a></Link>
+      </li>
+      <li class="nav-item">
+      <Link to='/category/3'><a class="nav-link" href="#">Xiaomi</a></Link>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#"> <SearchForm /></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Nosotros</a>
@@ -37,6 +44,5 @@ let Navbar = () => {
 );
 }
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 export default Navbar;
