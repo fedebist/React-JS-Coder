@@ -1,5 +1,4 @@
 import {useState, useEffect} from 'react';
-import { Button } from '@material-ui/core';
 
 let ItemCount =  ({ stock = 0, initial = 1,  onAdd }) =>{
 let [change, setChange] = useState(0);
@@ -27,7 +26,7 @@ return(
   <p class='cantidad'>{change}</p>
   <button onClick={count} class='btnCantidad'>+</button>
 
-  <button class='addCart' onClick={() => onAdd(count)}> Agregar al carrito</button>
+  <button class='btnCart' onClick={() => onAdd(change)}> Agregar al carrito</button>
   
 
 

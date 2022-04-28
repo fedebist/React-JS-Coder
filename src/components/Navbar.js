@@ -26,13 +26,13 @@ let Navbar = () => {
       <Link to='/category/3'><a class="nav-link" href="#">Xiaomi</a></Link>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="#"> <SearchForm /></a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="#">Nosotros</a>
       </li>
       <li class="nav-item">
-        <CartWidget></CartWidget>
+      <a class="nav-link" href="#"> <SearchForm /></a>
+      </li>
+      <li class="nav-item">
+        <Link to='/Cart'><CartWidget></CartWidget></Link>
       </li>
     </ul>
   </div>

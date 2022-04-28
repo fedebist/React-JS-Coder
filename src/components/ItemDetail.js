@@ -2,12 +2,13 @@ import { useState } from "react";
 import {Link} from 'react-router-dom';
 import ItemCount from './ItemCount';
 import React from 'react';
+import Cart from './Cart'
 
 const ItemDetail = ({ item }) => {
     const [itemCount, setItemCount] = useState(0);
 
     const onAdd = (qty) => {
-        alert("Seleccionaste " + qty + " productos.");
+        alert("Seleccionaste " + qty + " items.");
         setItemCount(qty);
     }
 
@@ -19,25 +20,21 @@ const ItemDetail = ({ item }) => {
      
             <div class='col-lg-6'>
              <img src={item.img} />
-             <div class='detailTitle'>{item.title}</div>
-             </div>
-            <div class='col-lg-3'>
-               {item.price}
-               </div>
-               <div class='col-lg-3'>
-               {item.stock} unidades en stock
-               </div>
-               {
-                      itemCount === 0
+             {
+                      itemCount === 0  /* Luego de clickear agregar, elimina el botón y agrega otro */
                       ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
-                    : <Link to='/cart' style={{textDecoration: "none"}}><button /></Link>
+                    : <Link to='/Cart'> <button class='btnCart'>Ir al carrito</button></Link>
                     }
-            <p>Cargando...</p>
+             </div>
+            <div class='col-lg-6'>
+            <div class='detailTitle'>{item.title}</div>
+              <div class='priceDetail'>{item.price}</div>
+               <div class='stockDetail'>{item.stock} unidades en stock</div>
+               </div>
+            
             </div>
             </div>
         }
-    
-    );
     
     </>
     )

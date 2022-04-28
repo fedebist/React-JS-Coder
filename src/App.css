@@ -230,12 +230,20 @@ ul.show{
 }
 
 .detail img{
-  width: 500px;
+  width: 700px;
   padding: 20px;
 }
 
 .detailTitle{
-  font-size: 100%;
+  font-size: 250%;
+}
+
+.priceDetail{
+  font-size: 170%;
+}
+
+.stockDetail{
+  font-size: 160%;
 }
 
 .SearchContainer{
@@ -251,4 +259,10 @@ ul.show{
   margin-right: 5px;
   border: none;
   outline: none;
+}
+
+.btnCart{
+  border-radius: 30%;
+  background-color: black;
+  color: beige;
 }
