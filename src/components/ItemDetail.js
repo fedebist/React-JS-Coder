@@ -2,7 +2,7 @@ import { useState } from "react";
 import {Link} from 'react-router-dom';
 import ItemCount from './ItemCount';
 import React from 'react';
-import Cart from './Cart'
+import cartButton from './cartButton';
 
 const ItemDetail = ({ item }) => {
     const [itemCount, setItemCount] = useState(0);
@@ -23,7 +23,7 @@ const ItemDetail = ({ item }) => {
              {
                       itemCount === 0  /* Luego de clickear agregar, elimina el botón y agrega otro */
                       ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
-                    : <Link to='/Cart'> <button class='btnCart'>Ir al carrito</button></Link>
+                    : <Link to='/Cart'><cartButton /> </Link>
                     }
              </div>
             <div class='col-lg-6'>

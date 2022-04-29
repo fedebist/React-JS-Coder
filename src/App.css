@@ -220,6 +220,10 @@ ul.show{
   justify-content: center;
 }
 
+.cardsTienda:hover{
+   opacity: 0.9;
+}
+
 .cardsTienda img{
  width: 350px;
 }
