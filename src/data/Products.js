@@ -1,3 +1,5 @@
+import { GifBox } from "@mui/icons-material";
+
 const Products = [
     {
       id: 1,
@@ -36,6 +38,16 @@ const Products = [
       fabricante: "Apple",
       img: ["https://i.blogs.es/e5cf54/iphone-x/840_560.jpg"],
       almacenamiento: '64 GB',
+      /* Características */
+      release: '12 de septiembre de 2017',
+      procesador: 'Apple A11 Bionic',
+      ram: '3 GB',
+      camera: '12MP',
+      peso: '174 gramos',
+      ancho: '70,9 mm',
+      grosor: '7,7 mm',
+      alto: '143,6 mm',
+      /* ----------- */
       stock: 1,
       categoryId: 1,
     },

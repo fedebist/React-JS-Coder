@@ -3,7 +3,6 @@ import {useState} from 'react';
 import ItemCount from './ItemCount';
 import ItemList from './ItemList';
 import customFetch from '../utils/customFetch';
-import Item from './Item';
 import Products from '../data/Products';
 import { useParams } from 'react-router-dom';
 
@@ -24,8 +23,6 @@ let ItemListContainer = ({}) => {
         .catch(err => console.log(err))
         }
     }, [ idCategory ]);
-
-
 
     return(
         <>

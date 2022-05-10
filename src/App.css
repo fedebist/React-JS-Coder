@@ -243,11 +243,19 @@ ul.show{
 }
 
 .priceDetail{
-  font-size: 170%;
+  font-size: 200%;
 }
 
 .stockDetail{
-  font-size: 160%;
+  font-size: 185%;
+}
+
+.resumenDetail{
+  font-size: 165%;
+}
+
+.pesoDetail{
+  font-size: 135%;
 }
 
 .SearchContainer{
@@ -269,4 +277,8 @@ ul.show{
   border-radius: 30%;
   background-color: black;
   color: beige;
+}
+
+.cartContainer img{
+  width: 500px;
 }
