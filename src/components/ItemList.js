@@ -4,7 +4,7 @@ import Container from '@mui/material/Container';
 let ItemList = ({items}) => {
      return (
      <Container>
-      {
+      { /* operador ternario */
        items.length > 0
        ?
       items.map(item=>
@@ -19,7 +19,7 @@ let ItemList = ({items}) => {
       stock={item.stock}
        />)
        :
-       <p>Cargando...</p>
+       <p>Loading...</p>
 }
       </Container>
       );

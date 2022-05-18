@@ -15,7 +15,7 @@ const CartContextProvider = ({children}) => {
            img: item.img,
            title: item.title,
            price: item.price,
-           qtyItem: qty,
+           qtyItem: qty
          }
        ]);
       } else{
@@ -32,8 +32,23 @@ const CartContextProvider = ({children}) => {
     setCartList(result);
   }
 
+  const calcTotalPerItem = (idItem) => {
+    let index = cartList.map(item=> item.idItem). indexOf(idItem);
+    return cartList[ index].price * cartList[ index].qtyItem
+  }
+
+  const subTotal = () => {
+    let totalPerItem = cartList.map(item => calcTotalPerItem(item.idItem));
+    return totalPerItem.reduce((previousValue, currentValue) => previousValue + currentValue);
+}
+
+const calcItemsQty = () => {
+  let qtys = cartList.map(item => item.qtyItem);
+  return qtys.reduce(((previousValue, currentValue) => previousValue + currentValue), 0);
+}
+
     return(
-        <CartContext.Provider value={{cartList, addToCart, removeCart, deleteItem}}> {/* estado global + función global */}
+        <CartContext.Provider value={{cartList, addToCart, removeCart, deleteItem, calcTotalPerItem, subTotal, calcItemsQty}}> {/* estado global + función global */}
           {children}
         </CartContext.Provider>
     );
