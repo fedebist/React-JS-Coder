@@ -17,13 +17,13 @@ let Navbar = () => {
       <Link to='/'><a class="nav-link" href="#">Home <span class="sr-only"></span></a></Link>
       </li>
       <li class="nav-item">
-        <Link to='/category/1'><a class="nav-link" href="#">iPhone</a></Link>
+        <Link to='/category/iphone'><a class="nav-link" href="#">iPhone</a></Link>
       </li>
       <li class="nav-item">
-      <Link to='/category/2'><a class="nav-link" href="#">Samsung</a></Link>
+      <Link to='/category/samsung'><a class="nav-link" href="#">Samsung</a></Link>
       </li>
       <li class="nav-item">
-      <Link to='/category/3'><a class="nav-link" href="#">Xiaomi</a></Link>
+      <Link to='/category/xiaomi'><a class="nav-link" href="#">Xiaomi</a></Link>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Nosotros</a>

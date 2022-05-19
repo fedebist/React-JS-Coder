@@ -5,7 +5,7 @@ import db from './firebaseConfig';
 export const firestoreFetch = async (idCategory) => {
     let q;
     if (idCategory) {
-        q = query(collection(db, "products"), where('categoryId', '==', idCategory));
+        q = query(collection(db, "products"), where('idCategory', '==', idCategory));
     } else {
         q = query(collection(db, "products"), orderBy('price'));
     }
