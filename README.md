@@ -1,10 +1,10 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto final del curso de ReactJS en Coderhouse
 
 ## Available Scripts
 
-In the project directory, you can run:
+PhoneStore pretende ser el e-commerce de un emprendimiento de teléfonos celulares de la ciudad de Mar del Plata, Argentina.
 
 ### `npm start`
 
