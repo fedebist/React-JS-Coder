@@ -17,6 +17,7 @@ let ItemList = ({items}) => {
       img={item.img}
       almacenamiento={item.almacenamiento}
       stock={item.stock}
+      currency={item.currency}
        />)
        :
        <p>Loading...</p>

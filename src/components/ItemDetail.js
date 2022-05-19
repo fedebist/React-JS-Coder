@@ -25,16 +25,16 @@ const ItemDetail = ({ item }) => {
              </div>
             <div class='col-lg-6'>
             <div class='detailTitle'>{item.title}</div>
-              <div class='priceDetail'>{item.price}</div>
+              <div class='priceDetail'>{item.price} {item.currency}</div>
                <div class='stockDetail'>{item.stock} unidad(es) en stock</div>
                <div class='resumenDetail'>Lanzamiento: {item.release}</div>
                <div class='resumenDetail'>RAM: {item.ram}</div>
                <div class='resumenDetail'>Procesador: {item.procesador}</div>
-               <div class='pesoDetail'>Cámara: {item.camera}</div>
+             {/*   <div class='pesoDetail'>Cámara: {item.camera}</div>
                <div class='pesoDetail'>Peso: {item.peso}</div>
                <div class='pesoDetail'>Alto: {item.alto}</div>
                <div class='pesoDetail'>Ancho: {item.ancho}</div>
-               <div class='pesoDetail'>Grosor: {item.grosor}</div>
+               <div class='pesoDetail'>Grosor: {item.grosor}</div> */}
                {
                       itemCount === 0  /* Luego de clickear agregar, elimina el botón y agrega otro */
                       ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />

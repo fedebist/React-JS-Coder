@@ -1,10 +1,47 @@
 import { useContext } from "react";
 import {CartContext} from './CartContext';
 import {Link} from 'react-router-dom';
+import { collection, doc, setDoc, serverTimestamp, updateDoc, increment } from "firebase/firestore";
+import db from '../utils/firebaseConfig';
 
 const Cart = () => {
     const test = useContext(CartContext); /* Leyendo context como test */
+    const checkout = () =>{
+        let order = {
+            buyer: {
+                name: "Muñeco Gallardo",
+                email: 'muñeco@gallardo.com',
+                phone: '9121831'
+            },
+            date: serverTimestamp(),
+            items: test.cartList.map(item => ({
+                id: item.idItem,
+                title: item.title,
+                price: item.price,
+                qty: item.qtyItem
+            })),
+            total: test.subTotal()
+        }
 
+        test.cartList.forEach(async (item) => {
+            const itemRef = doc(db, "products", item.idItem);
+            await updateDoc(itemRef, {
+              stock: increment(-item.qtyItem)
+            });
+          });
+          const createOrderInFirestore = async () => {
+            const newOrderRef = doc(collection(db, "orders"));
+            await setDoc(newOrderRef, order);
+            return newOrderRef;
+          }
+        
+          createOrderInFirestore()
+            .then(result => alert('Your order has been created. Please take note of the ID of your order.\n\n\nOrder ID: ' + result.id + '\n\n'))
+            .catch(err => console.log(err));
+        
+          test.removeCart();
+
+    }
     return (
         <>
             <h1 class='titleCarrito'>Carrito de compras</h1>
@@ -56,6 +93,7 @@ const Cart = () => {
                 <div class='col-lg-12'>
                 <div class='purchaseTitle'>Resumen de la compra</div>
                 <div>Total de la compra: $ {test.subTotal()}</div>
+                <button class='backShop' onClick={checkout}>Comprar</button>
                 </div>
                 </div>
                 </div>
