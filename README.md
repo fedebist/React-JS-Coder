@@ -1,15 +1,16 @@
-# Getting Started with Create React App
+# Proyecto final: React JS
 
-Proyecto final del curso de ReactJS en Coderhouse
+Proyecto final del curso de ReactJS en Coderhouse dictado por Alex Marin
 
-## Available Scripts
+## Motivo
 
 PhoneStore pretende ser el e-commerce de un emprendimiento de teléfonos celulares de la ciudad de Mar del Plata, Argentina.
 
-### `npm start`
+### Home
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+En el inicio o home, se visualizan los productos en stock
+
+### Detalles
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
